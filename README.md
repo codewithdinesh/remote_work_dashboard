@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Work Dashboard
 
-## Getting Started
+A Chrome-based work dashboard to help you stay up-to-date with multiple time zones, manage schedules, and track todos. This project is designed to be a lightweight, customizable, and user-friendly tool for productivity.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. **Dual Timezone Display**
+   - View the current time in **two timezones** (e.g., California and India).
+   - Automatically updates every second for real-time accuracy.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. **Custom Schedules**
+   - Add and manage your daily schedules with **title, start time, and end time**.
+   - Schedules are saved in `localStorage` for persistence across sessions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. **Todo List**
+   - Add, complete, and delete todos.
+   - Todos are saved in `localStorage` for persistence.
 
-## Learn More
+### 4. **Bookmarks**
+   - Quick access to your favorite websites.
+   - Automatically fetches Chrome bookmarks (if available) or uses a default list.
 
-To learn more about Next.js, take a look at the following resources:
+### 5. **Dark/Light Mode**
+   - Toggle between dark and light themes for better visibility.
+   - Theme preference is saved in `localStorage`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- **NextJs**: Frontend framework for building the UI.
+- **shadcn/ui**: Modern and customizable UI components.
+- **Lucide Icons**: Lightweight and customizable icons.
+- **LocalStorage**: Persists todos, schedules, and theme preferences.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How to Use
+
+1. **Clone the Repository**:
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the Project**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in Browser**:
+   - Navigate to `http://localhost:3000` to view the dashboard.
+
+---
+
+## Components
+
+### 1. **TimeCards**
+   - Displays the current time in two timezones.
+   - Automatically updates every second.
+
+### 2. **Bookmarks**
+   - Displays a list of bookmarks for quick access.
+   - Fetches Chrome bookmarks if available.
+
+### 3. **CustomSchedule**
+   - Allows users to add and manage schedules.
+   - Schedules are saved in `localStorage`.
+
+### 4. **TodoList**
+   - A simple todo list with add, complete, and delete functionality.
+   - Todos are saved in `localStorage`.
+
+---
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/b7245889-7e0c-4787-be46-01e5b5e8f754)
+
+---
+
+## Future Improvements
+
+- Add support for more timezones.
+- Integrate with Google Calendar for automatic schedule updates.
+- Add drag-and-drop functionality for todos and schedules.
+- Improve UI/UX for mobile responsiveness.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+---
+
+Enjoy staying productive with the **Work Dashboard**! 🚀
